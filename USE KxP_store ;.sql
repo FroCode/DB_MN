@@ -1,5 +1,5 @@
 USE KxP_store ;
 
-SELECT 1,2 ,3
-FROM customers
-
+SELECT shipped_date , order_id 
+FROM orders
+WHERE shipped_date IS NULL
