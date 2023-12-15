@@ -1,5 +1,6 @@
 USE KxP_store ;
 
-SELECT shipped_date , order_id 
-FROM orders
-WHERE shipped_date IS NULL
+SELECT * 
+FROM order_items
+WHERE order_id = 2  
+ORDER BY order_id DESC
