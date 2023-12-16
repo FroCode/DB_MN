@@ -1,5 +1,5 @@
 USE KxP_store ;
 
-SELECT order_id , products.product_id , quantity , products.unit_price , quantity * products.unit_price AS total_price
-FROM order_items
-
+SELECT * 
+FROM customers
+WHERE customer_id = 1
