@@ -1,6 +1,5 @@
 USE KxP_store ;
 
-SELECT * 
-FROM customers
-ORDER BY points DESC 
-OFFSET 0 ROWS FETCH NEXT 3 ROW ONLY;
+SELECT order_id , products.product_id , quantity , products.unit_price , quantity * products.unit_price AS total_price
+FROM order_items
+JOIN products ON order_items.product_id = products.product_id
