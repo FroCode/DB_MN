@@ -2,4 +2,4 @@ USE KxP_store ;
 
 SELECT * 
 FROM customers
-WHERE customer_id = 1
+WHERE customer_id = 2
